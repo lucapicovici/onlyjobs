@@ -4,7 +4,9 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { 
   connectDB,
-  userModel as User
+  userModel as User,
+  studentModel as Student,
+  companyModel as Company
 } from './models/index.js';
 
 const __dirname = path.resolve();
@@ -16,6 +18,8 @@ const importData = async() => {
 
 const destroyData = async() => {
   try {
+    await Student.deleteMany();
+    await Company.deleteMany();
     await User.deleteMany();
 
     console.log('Data destroyed!'.red.inverse);

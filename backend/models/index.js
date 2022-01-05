@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 import userModel from './userModel.js';
+import studentModel from './studentModel.js';
+import companyModel from './companyModel.js';
 
 mongoose.set('debug', true);
 
@@ -17,5 +19,7 @@ const connectDB = async() => {
 
 export { 
   connectDB,
-  userModel
+  userModel,
+  studentModel,
+  companyModel
 };

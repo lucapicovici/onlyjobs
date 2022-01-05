@@ -1,5 +1,9 @@
 import asyncHandler from 'express-async-handler';
-import { userModel as User } from '../models/index.js';
+import { 
+  userModel as User,
+  studentModel as Student,
+  companyModel as Company
+} from '../models/index.js';
 import generateToken from '../utils/generateToken.js';
 
 /**
@@ -18,6 +22,7 @@ const authUser = asyncHandler(async(req, res) => {
       name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
+      role: user.role,
       token: generateToken(user._id)
     });
   } else {
@@ -32,7 +37,7 @@ const authUser = asyncHandler(async(req, res) => {
  * @access        Public
  */
 const registerUser = asyncHandler(async(req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, role } = req.body;
 
   const userExists = await User.findOne({ email });
 
@@ -42,10 +47,22 @@ const registerUser = asyncHandler(async(req, res) => {
   }
 
   const user = await User.create({ 
-    name, 
+    name,
     email,
-    password
+    password,
+    role
   });
+
+  // Registration based on role
+  if (role.toLowerCase() === 'student') {
+    const student = await Student.create({
+      user: user._id
+    });
+  } else if (role.toLowerCase() === 'company') {
+    const company = await Company.create({
+      user: user._id
+    });
+  }
 
   if (user) {
     res.status(201).json({
@@ -53,6 +70,7 @@ const registerUser = asyncHandler(async(req, res) => {
       name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
+      role: user.role,
       token: generateToken(user._id)
     });
   } else {
