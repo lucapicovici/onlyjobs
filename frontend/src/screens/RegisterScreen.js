@@ -45,7 +45,6 @@ const RegisterScreen = ({ location, history }) => {
   return (
     <FormContainer>
       <h2>Create new account</h2>
-      <br/>
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}

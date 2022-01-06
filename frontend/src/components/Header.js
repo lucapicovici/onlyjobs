@@ -29,7 +29,7 @@ const Header = () => {
                   userInfo.role === 'student' 
                   ? `Hi, ${userInfo.name}`
                   : userInfo.name
-                } id='username'>
+                } className='active btnAnimate'>
                 <LinkContainer to='/profile'>
                   <NavDropdown.Item>Profile</NavDropdown.Item>
                 </LinkContainer>
@@ -39,7 +39,7 @@ const Header = () => {
               </NavDropdown>
             ) : (
               <LinkContainer to='/login'>
-                <Nav.Link><i className='fas fa-user'></i> Login</Nav.Link>
+                <Nav.Link className='active btnAnimate'><i className='fas fa-user'></i> Login</Nav.Link>
               </LinkContainer>
             )}
             </Nav>
