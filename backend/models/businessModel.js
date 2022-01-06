@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const companySchema = mongoose.Schema({
+const businessSchema = mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -9,6 +9,6 @@ const companySchema = mongoose.Schema({
   about: { type: String }
 });
 
-const Company = mongoose.model('Company', companySchema);
+const Business = mongoose.model('Business', businessSchema);
 
-export default Company;
+export default Business;

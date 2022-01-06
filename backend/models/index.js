@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import userModel from './userModel.js';
 import studentModel from './studentModel.js';
-import companyModel from './companyModel.js';
+import businessModel from './businessModel.js';
 
 mongoose.set('debug', true);
 
@@ -21,5 +21,5 @@ export {
   connectDB,
   userModel,
   studentModel,
-  companyModel
+  businessModel
 };

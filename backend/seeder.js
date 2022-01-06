@@ -6,7 +6,7 @@ import {
   connectDB,
   userModel as User,
   studentModel as Student,
-  companyModel as Company
+  businessModel as Business
 } from './models/index.js';
 
 const __dirname = path.resolve();
@@ -19,7 +19,7 @@ const importData = async() => {
 const destroyData = async() => {
   try {
     await Student.deleteMany();
-    await Company.deleteMany();
+    await Business.deleteMany();
     await User.deleteMany();
 
     console.log('Data destroyed!'.red.inverse);

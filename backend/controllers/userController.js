@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler';
 import { 
   userModel as User,
   studentModel as Student,
-  companyModel as Company
+  businessModel as Business
 } from '../models/index.js';
 import generateToken from '../utils/generateToken.js';
 
@@ -58,8 +58,8 @@ const registerUser = asyncHandler(async(req, res) => {
     const student = await Student.create({
       user: user._id
     });
-  } else if (role.toLowerCase() === 'company') {
-    const company = await Company.create({
+  } else if (role.toLowerCase() === 'business') {
+    const business = await Business.create({
       user: user._id
     });
   }
