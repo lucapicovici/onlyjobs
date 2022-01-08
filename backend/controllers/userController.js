@@ -11,7 +11,7 @@ import generateToken from '../utils/generateToken.js';
  * @route         POST /api/users/login
  * @access        Public
  */
-const authUser = asyncHandler(async(req, res) => {
+export const authUser = asyncHandler(async(req, res) => {
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
@@ -36,7 +36,7 @@ const authUser = asyncHandler(async(req, res) => {
  * @route         POST /api/users
  * @access        Public
  */
-const registerUser = asyncHandler(async(req, res) => {
+export const registerUser = asyncHandler(async(req, res) => {
   const { name, email, password, role } = req.body;
 
   const userExists = await User.findOne({ email });
@@ -84,13 +84,7 @@ const registerUser = asyncHandler(async(req, res) => {
  * @route   GET /api/users
  * @access  Private/Admin
  */
-const getUsers = asyncHandler(async(req, res) => {
+export const getUsers = asyncHandler(async(req, res) => {
   const users = await User.find({});
   res.status(200).json(users);
 });
-
-export {
-  authUser,
-  registerUser,
-  getUsers
-};

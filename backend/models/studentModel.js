@@ -16,7 +16,7 @@ const studentSchema = mongoose.Schema({
     {
       id: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Business'
+        ref: 'User'  // Business
       },
       name: { type: String },
       cv: { type: String }

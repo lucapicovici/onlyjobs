@@ -17,7 +17,7 @@ const businessSchema = mongoose.Schema({
     {
       id: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Student'
+        ref: 'User'  // Student
       },
       name: { type: String },
       cv: { type: String }  // @TODO: file upload
