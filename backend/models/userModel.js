@@ -25,7 +25,10 @@ const userSchema = mongoose.Schema(
       type: String,
       enum: ['student', 'business'],
       default: 'student'
-    }
+    },
+    images: [
+      { type: String }
+    ]
   }, 
   {
     timestamps: true

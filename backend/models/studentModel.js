@@ -7,10 +7,21 @@ const studentSchema = mongoose.Schema({
     ref: 'User'
   },
   about: { type: String },
-  cv: {
-    type: Boolean,
-    default: false
-  }
+  cv: { type: String },  // @TODO: file upload
+  city: { type: String },  // @TODO: include more location details
+  domains: [
+    { type: String }
+  ],
+  applications: [
+    {
+      id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Business'
+      },
+      name: { type: String },
+      cv: { type: String }
+    }
+  ]
 });
 
 const Student = mongoose.model('Student', studentSchema);

@@ -24,13 +24,18 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-            {userInfo ? (
-              <NavDropdown title={
-                  userInfo.role === 'student' 
-                  ? `Hi, ${userInfo.name}`
-                  : userInfo.name
-                } className='active btnAnimate'>
+            {userInfo && userInfo.role === 'student' ? (
+              <NavDropdown title={`Hi, ${userInfo.name}`} className='active btnAnimate'>
                 <LinkContainer to='/profile'>
+                  <NavDropdown.Item>Profile</NavDropdown.Item>
+                </LinkContainer>
+                <NavDropdown.Item onClick={logoutHandler}>
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            ) : userInfo && userInfo.role === 'business' ? (
+              <NavDropdown title={userInfo.name} className='active btnAnimate'>
+                <LinkContainer to='/business-profile'>
                   <NavDropdown.Item>Profile</NavDropdown.Item>
                 </LinkContainer>
                 <NavDropdown.Item onClick={logoutHandler}>

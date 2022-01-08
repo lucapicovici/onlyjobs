@@ -23,3 +23,18 @@ h2 {
 .navbar .btnAnimate:hover {
   transform: scale(1.1, 1.1);
 }
+
+/* Home Screen */
+.homeScreenRow {
+  padding-top: 40vh;
+}
+
+.homeScreenCol {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#homeBtn {
+  width: 250px;
+}

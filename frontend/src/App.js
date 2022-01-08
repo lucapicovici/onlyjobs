@@ -5,7 +5,10 @@ import HomeScreen from './screens/HomeScreen';
 import Header from './components/Header';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
-import ProfileScreen from './screens/ProfileScreen';
+import StudentProfileScreen from './screens/StudentProfileScreen.js';
+import BusinessProfileScreen from './screens/BusinessProfileScreen.js';
+import InternshipsScreen from './screens/InternshipsScreen';
+import StudentSearchScreen from './screens/StudentSearchScreen';
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
           <Route exact path='/' component={HomeScreen} />
           <Route path='/login' component={LoginScreen} />
           <Route path='/register' component={RegisterScreen} />
-          <Route path='/profile' component={ProfileScreen} />
+          <Route path='/profile' component={StudentProfileScreen} />
+          <Route path='/business-profile' component={BusinessProfileScreen} />
+          <Route path='/internships' component={InternshipsScreen} />
+          <Route path='/students' component={StudentSearchScreen} />
         </Container>
       </main>
     </Router>
