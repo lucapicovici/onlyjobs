@@ -1,6 +1,7 @@
 [
   {
     "user": "5c8a1d5b0190b214360dc034",
+    "name": "Samsung",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Bucuresti",
     "domain": "computer-science",
@@ -25,6 +26,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc035",
+    "name": "Abac",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Cluj-Napoca",
     "domain": "computer-science",
@@ -44,6 +46,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc036",
+    "name": "AMD",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Bucuresti",
     "domain": "computer-science",
@@ -68,6 +71,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc037",
+    "name": "Regina Maria",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Cluj-Napoca",
     "domain": "health",
@@ -82,6 +86,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc038",
+    "name": "AECOM",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Timisoara",
     "domain": "construction-engineering",
@@ -96,6 +101,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc039",
+    "name": "L'Oreal",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Cluj-Napoca",
     "domain": "marketing",
@@ -115,6 +121,7 @@
   },
   {
     "user": "5c8a1d5b0190b214360dc040",
+    "name": "ING Bank",
     "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "city": "Cluj-Napoca",
     "domain": "marketing",

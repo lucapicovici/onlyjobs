@@ -6,6 +6,10 @@ const businessSchema = mongoose.Schema({
     required: true,
     ref: 'User'
   },
+  name: {
+    type: String,
+    required: true
+  },
   about: { type: String },
   city: { type: String },  // @TODO: include more location details
   domain: { type: String },  // ex: Computer Science,

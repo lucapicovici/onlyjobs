@@ -12,11 +12,17 @@ export const getBusinesses = asyncHandler(async(req, res) => {
   const page = Number(req.query.pageNumber) || 1;
 
   // Filtering
-  const reqQuery = { ...req.query };
-  const removeFields = ['pageNumber'];
+  const keyword = req.query.keyword ? {
+    name: {
+      $regex: req.query.keyword,
+      $options: 'i'
+    }
+  } : {};
 
+  const reqQuery = { ...req.query, ...keyword };
+  const removeFields = ['pageNumber', 'keyword'];
   removeFields.forEach(param => delete reqQuery[param]);
-  
+
   const count = await Business.countDocuments(reqQuery);
 
   // Search for all businesses in database
@@ -25,6 +31,7 @@ export const getBusinesses = asyncHandler(async(req, res) => {
     .skip(pageSize * (page-1));
 
   res.status(200).json({
+    count,
     businesses,
     page,
     pages: Math.ceil(count / pageSize)

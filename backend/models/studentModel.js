@@ -6,6 +6,10 @@ const studentSchema = mongoose.Schema({
     required: true,
     ref: 'User'
   },
+  name: {
+    type: String,
+    required: true
+  },
   about: { type: String },
   cv: { type: String },  // @TODO: file upload
   city: { type: String },  // @TODO: include more location details
