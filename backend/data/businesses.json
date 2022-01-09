@@ -22,6 +22,9 @@
         "name": "Kevin Smith",
         "cv": "kevin-samsung.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -42,6 +45,9 @@
         "name": "Kevin Smith",
         "cv": "kevin-abac.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -67,6 +73,9 @@
         "name": "Kevin Smith",
         "cv": "kevin-amd.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -82,6 +91,9 @@
         "name": "Charly Antolini",
         "cv": "charly-reginamaria.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -97,6 +109,9 @@
         "name": "Eugen Filea",
         "cv": "filea-aecom.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -117,6 +132,9 @@
         "name": "Greg Harris",
         "cv": "greg-loreal.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   },
   {
@@ -137,6 +155,9 @@
         "name": "Greg Harris",
         "cv": "greg-ingbank.pdf"
       }
+    ],
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
     ]
   }
 ]

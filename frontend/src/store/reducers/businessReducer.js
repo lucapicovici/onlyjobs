@@ -11,6 +11,7 @@ export const businessListReducer = (state={ businesses: [] }, action) => {
     case BUSINESS_LIST_SUCCESS:
       return { 
         loading: false, 
+        count: action.payload.count,
         businesses: action.payload.businesses,
         page: action.payload.page,
         pages: action.payload.pages

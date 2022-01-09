@@ -8,7 +8,7 @@ const HomeScreen = ({ history }) => {
 
   const redirect = () => {
     if (userInfo && userInfo.role === 'student') {
-      history.push('/internships');
+      history.push('/businesses');
     } else if (userInfo && userInfo.role === 'business') {
       history.push('/students')
     } else {

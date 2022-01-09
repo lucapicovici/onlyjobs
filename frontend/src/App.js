@@ -7,7 +7,7 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import StudentProfileScreen from './screens/StudentProfileScreen.js';
 import BusinessProfileScreen from './screens/BusinessProfileScreen.js';
-import InternshipsScreen from './screens/InternshipsScreen';
+import BusinessesScreen from './screens/BusinessesScreen';
 import StudentSearchScreen from './screens/StudentSearchScreen';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path='/register' component={RegisterScreen} />
           <Route path='/profile' component={StudentProfileScreen} />
           <Route path='/business-profile' component={BusinessProfileScreen} />
-          <Route path='/internships' component={InternshipsScreen} />
+          <Route path='/businesses' component={BusinessesScreen} />
           <Route path='/students' component={StudentSearchScreen} />
         </Container>
       </main>

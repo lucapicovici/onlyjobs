@@ -31,9 +31,9 @@ const importData = async() => {
     await Student.deleteMany();
     await User.deleteMany();
     
-    await User.insertMany(users);
-    await Student.insertMany(students);
-    await Business.insertMany(businesses);
+    await User.create(users);
+    await Student.create(students);
+    await Business.create(businesses);
 
     console.log('Data imported!'.green.inverse);
     process.exit();

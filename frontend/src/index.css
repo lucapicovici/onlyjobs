@@ -38,3 +38,83 @@ h2 {
 #homeBtn {
   width: 250px;
 }
+
+/* Business List */
+/* --- Hotel List --- */
+.businessListRow {
+  flex-direction: column;
+}
+
+.businessListCol {
+  margin: 10px 0;
+}
+
+.businessListCard {
+  padding: 10px;
+}
+
+.businessListCard p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.businessListCard .address {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+}
+
+.businessListCard .description {
+  font-size: 0.8em;
+}
+
+.businessListCard .imgWrapper {
+  height: 200px;
+}
+
+.businessListCard .imgWrapper img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.businessListCard .card-title {
+  margin-bottom: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  word-break: break-word;
+  max-width: 300px;
+}
+
+.businessListCard .card-title:hover {
+  text-decoration: none;
+}
+
+.businessListCard .card-title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.businessListCard .type {
+  font-size: 0.8em;
+  color: grey;
+}
+
+@media screen and (max-width: 992px) {
+  .businessListCard .card-title {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .businessListCard .card-title {
+    max-width: 236px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .businessListCard .card-title {
+    font-size: 1em;
+  }
+}

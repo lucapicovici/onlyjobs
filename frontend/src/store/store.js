@@ -5,10 +5,12 @@ import {
   userLoginReducer,
   userRegisterReducer
 } from './reducers/userReducer';
+import { businessListReducer } from './reducers/businessReducer';
 
 const reducer = combineReducers({
   userRegister: userRegisterReducer,
-  userLogin: userLoginReducer
+  userLogin: userLoginReducer,
+  businessList: businessListReducer
 });
 
 const userInfoFromStorage = localStorage.getItem('userInfo') 

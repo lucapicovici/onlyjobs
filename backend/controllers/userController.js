@@ -56,11 +56,13 @@ export const registerUser = asyncHandler(async(req, res) => {
   // Registration based on role
   if (role.toLowerCase() === 'student') {
     const student = await Student.create({
-      user: user._id
+      user: user._id,
+      name
     });
   } else if (role.toLowerCase() === 'business') {
     const business = await Business.create({
-      user: user._id
+      user: user._id,
+      name
     });
   }
 
