@@ -6,8 +6,9 @@ import Message from '../components/Message';
 import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import Paginate from '../components/Paginate';
 import Business from '../components/Business';
+import { SEARCH_CRITERIA } from '../store/constants/businessConstants';
 
-const BusinessesScreen = ({ match, history }) => {
+const BusinessListScreen = ({ match, history }) => {
   // Student's page for searching internships
 
   const dispatch = useDispatch();
@@ -23,17 +24,39 @@ const BusinessesScreen = ({ match, history }) => {
   const businessList = useSelector(state => state.businessList);
   const { loading, error, count, businesses, page, pages } = businessList;
 
-  const searchKeyword = '';
+  const searchCriteria = useSelector(state => state.searchCriteria);
+  const { 
+    keyword: keywordSearch, 
+    city: citySearch, 
+    domain: domainSearch
+  } = searchCriteria;
 
   useEffect(() => {
     if (!userInfo) {
       history.push('/login');
     } else {
-      dispatch(listBusinesses(pageNumber, searchKeyword));
-    }
-  }, [userInfo, history, dispatch, pageNumber, searchKeyword]);
+      dispatch(listBusinesses(pageNumber, keywordSearch, citySearch, domainSearch));
 
-  const submitHandler = () => {
+      if (keywordSearch) setKeyword(keywordSearch);
+      if (citySearch) setCity(citySearch);
+      if (domainSearch) setDomain(domainSearch);
+
+      console.log(`pageNumber is ${pageNumber}`);
+    }
+  }, [userInfo, history, dispatch, pageNumber, keywordSearch, citySearch, domainSearch]);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    dispatch({ 
+      type: SEARCH_CRITERIA,
+      payload: {
+        keyword,
+        city,
+        domain
+      }
+    });
+    localStorage.setItem('searchCriteria', JSON.stringify({ keyword, city, domain }));
+    history.push('/businesses');  // Set pageNumber back to 1
   }
 
   return (
@@ -62,19 +85,29 @@ const BusinessesScreen = ({ match, history }) => {
                 <Form.Group>
                   <Form.Label>City</Form.Label>
                   <Form.Control 
-                    type='text'
-                    name='city'
+                    as="select"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                  />
+                  >
+                    <option value=''>Select city...</option>
+                    <option value='Cluj-Napoca'>Cluj-Napoca</option>
+                    <option value='Bucuresti'>Bucuresti</option>
+                    <option value='Timisoara'>Timisoara</option>
+                  </Form.Control>
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>Domain</Form.Label>
-                  <Form.Control
-                    type='text' 
+                  <Form.Control 
+                    as="select"
                     value={domain}
                     onChange={(e) => setDomain(e.target.value)}
-                  />
+                  >
+                    <option value=''>Select domain...</option>
+                    <option value='computer-science'>Computer Science</option>
+                    <option value='construction-engineering'>Construction Engineering</option>
+                    <option value='health'>Health</option>
+                    <option value='marketing'>Marketing</option>
+                  </Form.Control>
                 </Form.Group>
                 <Button type='submit' variant='info'>
                   Search
@@ -85,6 +118,7 @@ const BusinessesScreen = ({ match, history }) => {
         </Col>
         <Col lg={8} xl={9}>
           <Row className='businessListRow'>
+            {businesses.length === 0 && <h4>No results.</h4>}
             {businesses.map(business => (
               <Col key={business._id} className='businessListCol'>
                 <Business business={business}/>
@@ -100,4 +134,4 @@ const BusinessesScreen = ({ match, history }) => {
   )
 }
 
-export default BusinessesScreen
+export default BusinessListScreen

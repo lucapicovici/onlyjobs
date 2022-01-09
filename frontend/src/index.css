@@ -60,13 +60,6 @@ h2 {
   -webkit-box-orient: vertical;
 }
 
-.businessListCard .address {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;  
-}
-
 .businessListCard .description {
   font-size: 0.8em;
 }

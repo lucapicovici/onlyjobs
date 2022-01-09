@@ -7,8 +7,9 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import StudentProfileScreen from './screens/StudentProfileScreen.js';
 import BusinessProfileScreen from './screens/BusinessProfileScreen.js';
-import BusinessesScreen from './screens/BusinessesScreen';
+import BusinessListScreen from './screens/BusinessListScreen';
 import StudentSearchScreen from './screens/StudentSearchScreen';
+import BusinessScreen from './screens/BusinessScreen';
 
 function App() {
   return (
@@ -21,8 +22,10 @@ function App() {
           <Route path='/register' component={RegisterScreen} />
           <Route path='/profile' component={StudentProfileScreen} />
           <Route path='/business-profile' component={BusinessProfileScreen} />
-          <Route path='/businesses' component={BusinessesScreen} />
-          <Route path='/students' component={StudentSearchScreen} />
+          <Route exact path='/businesses' component={BusinessListScreen} />
+          <Route exact path='/businesses/page/:pageNumber' component={BusinessListScreen} />
+          <Route exact path='/students' component={StudentSearchScreen} />
+          <Route exact path='/businesses/:id' component={BusinessScreen} />
         </Container>
       </main>
     </Router>

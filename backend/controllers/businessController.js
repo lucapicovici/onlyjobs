@@ -37,3 +37,19 @@ export const getBusinesses = asyncHandler(async(req, res) => {
     pages: Math.ceil(count / pageSize)
   });
 });
+
+/**
+ * @description   Return business by ID
+ * @route         GET /api/businesses/:id
+ * @access        Public
+ */
+export const getBusinessById = asyncHandler(async(req, res) => {
+  const business = await Business.findById(req.params.id);
+
+  if (business) {
+    res.status(200).json(business);
+  } else {
+    res.status(404);
+    throw new Error('Business not found');
+  }
+});
