@@ -8,10 +8,12 @@ import {
 import { 
   businessListReducer,
   businessDetailsReducer,
-  searchCriteriaReducer
+  searchCriteriaReducer,
+  studentApplyForInternshipReducer
 } from './reducers/businessReducer';
 import { 
-  studentDetailsReducer
+  studentDetailsReducer,
+  studentApplyReducer
 } from './reducers/studentReducer';
 
 const reducer = combineReducers({
@@ -20,7 +22,9 @@ const reducer = combineReducers({
   businessList: businessListReducer,
   businessDetails: businessDetailsReducer,
   searchCriteria: searchCriteriaReducer,
-  studentDetails: studentDetailsReducer
+  studentDetails: studentDetailsReducer,
+  studentApply: studentApplyReducer,
+  studentApplyForInternship: studentApplyForInternshipReducer
 });
 
 const userInfoFromStorage = localStorage.getItem('userInfo') 

@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import { Button, Card, Col, Form, Row, Table } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
-import { listBusinessDetails } from '../store/actions/businessActions';
+import { listBusinessDetails, studentApplyForInternship } from '../store/actions/businessActions';
+import { studentApply } from '../store/actions/studentActions';
 import {Avatar} from "@mui/material";
 import {blue} from "@mui/material/colors";
 
@@ -14,6 +15,9 @@ const BusinessScreen = ({ match }) => {
 
   const businessDetails = useSelector(state => state.businessDetails);
   const { loading, error, business } = businessDetails;
+
+  const userLogin = useSelector(state => state.userLogin);
+  const { userInfo } = userLogin;
 
   useEffect(() => {
     if (business.user !== businessId && !loading) {
@@ -33,6 +37,37 @@ const BusinessScreen = ({ match }) => {
 
       return count;
     } else return "Loading...";
+  }
+
+  const applyForInternship = (event) => {
+    if (userInfo) {
+      let cv = document?.getElementById('upload-cv')?.value;
+      let businessName = business.name;
+      let studentUserId = userInfo._id;
+      let offer = event.target.getAttribute('data-arg1');
+
+      // Call action creator
+      dispatch(studentApply({ 
+        businessId, 
+        studentUserId, 
+        name: businessName, 
+        cv, 
+        offer 
+      }));
+
+      console.log(userInfo.name + ' applied to ' + offer);
+
+      // Post data to business model as well
+      dispatch(studentApplyForInternship({ 
+        studentId: studentUserId, 
+        businessUserId: business.user, 
+        name: userInfo.name, 
+        cv, 
+        offer 
+      }));
+
+      console.log('Updating business table...');
+    }
   }
 
   return (
@@ -110,6 +145,7 @@ const BusinessScreen = ({ match }) => {
               <th>#</th>
               <th>Available Internships</th>
               <th>Applicants</th>
+              <th>Upload CV</th>
               <th>Apply now</th>
             </tr>
             </thead>
@@ -121,7 +157,12 @@ const BusinessScreen = ({ match }) => {
                 <td>
                   {countApplicantsAtInternship(internship)}
                 </td>
-                <td>Apply</td>
+                <td>
+                  <Form.Control size="sm" type="text" id="upload-cv" placeholder="Select file..." />
+                </td>
+                <td>
+                  <Button size='sm' onClick={applyForInternship} data-arg1={internship}>Apply</Button>
+                </td>
               </tr>
             )}
             </tbody>
