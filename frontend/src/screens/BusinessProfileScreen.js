@@ -157,13 +157,16 @@ const StudentProfileScreen = () => {
         </Row>
         <Row style={{paddingTop: 75}}>
           <Col>
-            <div className="row mb-3">
-              <div className="col-sm-3">
-                <h6 className="mb-0">Internships</h6>
+            <div className="row mb-3" style={{display: 'flex', alignItems: 'center'}}>
+              <div className="col-sm-2">
+                <h6 className="mb-0">Add Internship</h6>
               </div>
-              <div className="col-sm-9 text-secondary">
-                <Form.Control type="text" name="formAbout" value={business.internships}
+              <div className="col-sm-6 text-secondary">
+                <Form.Control type="text" name="formAbout" 
                               onChange={(e) => setProfile({...profile, about: e.target.value})}/>
+              </div>
+              <div className="col-sm-2 text-secondary">
+                <a href="/business-profile">Add</a>
               </div>
             </div>
           </Col>
