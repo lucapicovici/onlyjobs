@@ -136,15 +136,6 @@ const StudentProfileScreen = () => {
                   </div>
                   <div className="row mb-3">
                     <div className="col-sm-3">
-                      <h6 className="mb-0">Internships</h6>
-                    </div>
-                    <div className="col-sm-9 text-secondary">
-                      <Form.Control type="text" name="formAbout" value={business.internships}
-                                    onChange={(e) => setProfile({...profile, about: e.target.value})}/>
-                    </div>
-                  </div>
-                  <div className="row mb-3">
-                    <div className="col-sm-3">
                       <h6 className="mb-0">Visibility</h6>
                     </div>
                     <div className="col-sm-9 text-secondary">
@@ -165,6 +156,19 @@ const StudentProfileScreen = () => {
           </div>
         </Row>
         <Row style={{paddingTop: 75}}>
+          <Col>
+            <div className="row mb-3">
+              <div className="col-sm-3">
+                <h6 className="mb-0">Internships</h6>
+              </div>
+              <div className="col-sm-9 text-secondary">
+                <Form.Control type="text" name="formAbout" value={business.internships}
+                              onChange={(e) => setProfile({...profile, about: e.target.value})}/>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row style={{paddingTop: 15}}>
           <Table striped bordered hover>
             <thead>
             <tr>

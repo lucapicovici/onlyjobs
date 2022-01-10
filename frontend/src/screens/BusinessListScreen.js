@@ -66,7 +66,7 @@ const BusinessListScreen = ({ match, history }) => {
     ) : (
       <>
       <Row>
-        <Col lg={4} xl={3}>
+        <Col lg={5} xl={4}>
           <Card style={{ width: '100%' }}>
             <Card.Body>
               <Card.Title>Showing results for:</Card.Title>
@@ -114,7 +114,7 @@ const BusinessListScreen = ({ match, history }) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={8} xl={9}>
+        <Col lg={7} xl={8}>
           <Row className='businessListRow'>
             {businesses.length === 0 && <h4>No results.</h4>}
             {businesses.map(business => (

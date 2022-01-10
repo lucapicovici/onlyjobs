@@ -2,6 +2,7 @@
   {
     "user": "5d7a514b5d2c12c7449be043",
     "name": "George Willis",
+    "email": "george@gmail.com",
     "about": "Hi! I'm George Willis, a computer science student in my second year. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "george-willis.pdf",
     "city": "Bucuresti",
@@ -27,6 +28,7 @@
   {
     "user": "5d7a514b5d2c12c7449be044",
     "name": "Eugen Filea",
+    "email": "eugenfilea@gmail.com",
     "about": "Hi! I'm Eugen Filea, a construction engineer in my third year. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "eugen-filea.pdf",
     "city": "Timisoara",
@@ -46,6 +48,7 @@
   {
     "user": "5d7a514b5d2c12c7449be045",
     "name": "John Doe",
+    "email": "john@gmail.com",
     "about": "Hi! I'm John Doe, a computer science student in my third year at Babes-Bolyai University. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "john-doe.pdf",
     "city": "Cluj-Napoca",
@@ -77,6 +80,7 @@
   {
     "user": "5d7a514b5d2c12c7449be046",
     "name": "Kevin Smith",
+    "email": "kevin@gmail.com",
     "about": "Hi! I'm Kevin Smith, a computer science student in my second year at Babes-Bolyai University. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "kevin-smith.pdf",
     "city": "Cluj-Napoca",
@@ -108,6 +112,7 @@
   {
     "user": "5c8a1d5b0190b214360dc031",
     "name": "Mary Williams",
+    "email": "mary@gmail.com",
     "about": "Hi! I'm Mary Williams, and I wish to pursue a career in marketing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "mary-williams.pdf",
     "city": "Cluj-Napoca",
@@ -133,6 +138,7 @@
   {
     "user": "5c8a1d5b0190b214360dc032",
     "name": "Charly Antolini",
+    "email": "antolini@gmail.com",
     "about": "Hi! I'm Charly Antolini, and I'm looking for an internship as a medical assistant. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "charly-antolini.pdf",
     "city": "Cluj-Napoca",
@@ -152,6 +158,7 @@
   {
     "user": "5c8a1d5b0190b214360dc033",
     "name": "Greg Harris",
+    "email": "greg@gmail.com",
     "about": "Hi! I'm Greg Harris, and I'm looking for an internship in the marketing domain. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "cv": "greg-harris.pdf",
     "city": "Cluj-Napoca",

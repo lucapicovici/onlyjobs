@@ -10,6 +10,11 @@ const businessSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
   about: { type: String },
   city: { type: String },  // @TODO: include more location details
   domain: { type: String },  // ex: Computer Science,
@@ -17,10 +22,9 @@ const businessSchema = mongoose.Schema({
     type: Boolean,
     default: true
   },
-  internships: { 
-    type: String,
-    required: true
-  },
+  internships: [
+    { type: String }
+  ],
   applicants: [
     {
       id: {
