@@ -44,7 +44,6 @@ h2 {
 }
 
 /* Business List */
-/* --- Hotel List --- */
 .businessListRow {
   flex-direction: column;
 }
@@ -70,6 +69,7 @@ h2 {
 
 .businessListCard .imgWrapper {
   height: 200px;
+  max-width: 200px;
 }
 
 .businessListCard .imgWrapper img {
