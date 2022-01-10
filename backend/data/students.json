@@ -61,13 +61,13 @@
         "id": "5c8a1d5b0190b214360dc036",
         "name": "AMD",
         "cv": "john-amd.pdf",
-        "offer": "Machine Learning intern"
+        "offer": "Software Engineer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc035",
         "name": "Abac",
         "cv": "john-abac.pdf",
-        "offer": "Front End Web Developer intern"
+        "offer": "Java Developer intern"
       }
     ],
     "images": [
@@ -92,7 +92,7 @@
         "id": "5c8a1d5b0190b214360dc036",
         "name": "AMD",
         "cv": "kevin-amd.pdf",
-        "offer": "Backend Software Developer intern"
+        "offer": "Software Engineer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc035",
