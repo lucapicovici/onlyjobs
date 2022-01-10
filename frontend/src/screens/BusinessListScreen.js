@@ -40,8 +40,6 @@ const BusinessListScreen = ({ match, history }) => {
       if (keywordSearch) setKeyword(keywordSearch);
       if (citySearch) setCity(citySearch);
       if (domainSearch) setDomain(domainSearch);
-
-      console.log(`pageNumber is ${pageNumber}`);
     }
   }, [userInfo, history, dispatch, pageNumber, keywordSearch, citySearch, domainSearch]);
 
@@ -73,7 +71,7 @@ const BusinessListScreen = ({ match, history }) => {
             <Card.Body>
               <Card.Title>Showing results for:</Card.Title>
               <Form onSubmit={submitHandler}>
-                <Form.Group>
+                <Form.Group className='mb-3'>
                   <Form.Label>Keyword</Form.Label>
                   <Form.Control 
                     type='text'
@@ -82,7 +80,7 @@ const BusinessListScreen = ({ match, history }) => {
                     onChange={(e) => setKeyword(e.target.value)}
                   />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className='mb-3'>
                   <Form.Label>City</Form.Label>
                   <Form.Control 
                     as="select"
@@ -95,7 +93,7 @@ const BusinessListScreen = ({ match, history }) => {
                     <option value='Timisoara'>Timisoara</option>
                   </Form.Control>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className='mb-3'>
                   <Form.Label>Domain</Form.Label>
                   <Form.Control 
                     as="select"
@@ -120,7 +118,7 @@ const BusinessListScreen = ({ match, history }) => {
           <Row className='businessListRow'>
             {businesses.length === 0 && <h4>No results.</h4>}
             {businesses.map(business => (
-              <Col key={business._id} className='businessListCol'>
+              <Col key={business.user} className='businessListCol'>
                 <Business business={business}/>
               </Col>
             ))}

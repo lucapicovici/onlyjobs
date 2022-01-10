@@ -23,7 +23,8 @@ const studentSchema = mongoose.Schema({
         ref: 'User'  // Business
       },
       name: { type: String },
-      cv: { type: String }
+      cv: { type: String },
+      offer: { type: String }
     }
   ],
   images: [

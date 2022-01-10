@@ -20,12 +20,12 @@ function App() {
           <Route exact path='/' component={HomeScreen} />
           <Route path='/login' component={LoginScreen} />
           <Route path='/register' component={RegisterScreen} />
-          <Route path='/profile' component={StudentProfileScreen} />
-          <Route path='/business-profile' component={BusinessProfileScreen} />
+          <Route exact path='/profile' component={StudentProfileScreen} />
+          <Route exact path='/business-profile' component={BusinessProfileScreen} />
           <Route exact path='/businesses' component={BusinessListScreen} />
           <Route exact path='/businesses/page/:pageNumber' component={BusinessListScreen} />
           <Route exact path='/students' component={StudentSearchScreen} />
-          <Route exact path='/businesses/:id' component={BusinessScreen} />
+          <Route exact path='/businesses/:userId' component={BusinessScreen} />
         </Container>
       </main>
     </Router>

@@ -5,13 +5,13 @@ const Business = ({ business }) => {
   return (
     <div className="card mb-3 businessListCard">
       <div className="row no-gutters">
-        <Link className="col-md-4 imgWrapper" to={`/businesses/${business._id}`}>
+        <Link className="col-md-4 imgWrapper" to={`/businesses/${business.user}`}>
           <img src={business.images?.[0]?.src} alt={business.name} />
         </Link>
         <div className="col-md-8">
           <div className="card-body">
             <div className="card-title-wrap">
-              <Link className="card-title" to={`/businesses/${business._id}`}>
+              <Link className="card-title" to={`/businesses/${business.user}`}>
                 <span>{business.name}</span>
               </Link>
             </div>

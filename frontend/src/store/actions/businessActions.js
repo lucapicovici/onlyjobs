@@ -32,11 +32,11 @@ export const listBusinesses = (pageNumber, keyword, city, domain) => async(dispa
   }
 };
 
-export const listBusinessDetails = (id) => async (dispatch) => {
+export const listBusinessDetails = (userId) => async (dispatch) => {
   try {
     dispatch({ type: BUSINESS_DETAILS_REQUEST });
 
-    const { data } = await axios.get(`/api/businesses/${id}`);
+    const { data } = await axios.get(`/api/businesses/${userId}`);
 
     dispatch({
       type: BUSINESS_DETAILS_SUCCESS,

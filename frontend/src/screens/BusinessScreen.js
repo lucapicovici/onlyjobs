@@ -7,13 +7,13 @@ import { listBusinessDetails } from '../store/actions/businessActions';
 
 const BusinessScreen = ({ match }) => {
   const dispatch = useDispatch();
-  const businessId = match.params.id;
+  const businessId = match.params.userId;
 
   const businessDetails = useSelector(state => state.businessDetails);
   const { loading, error, business } = businessDetails;
 
   useEffect(() => {
-    if (business._id !== businessId && !loading) {
+    if (business.user !== businessId && !loading) {
       dispatch(listBusinessDetails(businessId));
     }
   }, [dispatch, business, businessId, loading])

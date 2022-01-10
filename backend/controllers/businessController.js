@@ -40,11 +40,11 @@ export const getBusinesses = asyncHandler(async(req, res) => {
 
 /**
  * @description   Return business by ID
- * @route         GET /api/businesses/:id
+ * @route         GET /api/businesses/:userId
  * @access        Public
  */
-export const getBusinessById = asyncHandler(async(req, res) => {
-  const business = await Business.findById(req.params.id);
+export const getBusinessByUserId = asyncHandler(async(req, res) => {
+  const business = await Business.findOne({ user: req.params.userId });
 
   if (business) {
     res.status(200).json(business);

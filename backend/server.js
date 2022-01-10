@@ -7,6 +7,7 @@ import { connectDB } from './models/index.js';
 
 import userRoutes from './routes/userRoutes.js';
 import businessRoutes from './routes/businessRoutes.js';
+import studentRoutes from './routes/studentRoutes.js';
 
 const __dirname = path.resolve();
 dotenv.config({ path: `${__dirname}/config.env` });
@@ -19,6 +20,7 @@ connectDB();
 app.use(express.json());
 app.use('/api/users', userRoutes);
 app.use('/api/businesses', businessRoutes);
+app.use('/api/students', studentRoutes);
 
 app.get('/', (req, res) => res.json('OnlyJobs API is running...'));
 

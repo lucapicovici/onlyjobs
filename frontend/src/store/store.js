@@ -10,13 +10,17 @@ import {
   businessDetailsReducer,
   searchCriteriaReducer
 } from './reducers/businessReducer';
+import { 
+  studentDetailsReducer
+} from './reducers/studentReducer';
 
 const reducer = combineReducers({
   userRegister: userRegisterReducer,
   userLogin: userLoginReducer,
   businessList: businessListReducer,
   businessDetails: businessDetailsReducer,
-  searchCriteria: searchCriteriaReducer
+  searchCriteria: searchCriteriaReducer,
+  studentDetails: studentDetailsReducer
 });
 
 const userInfoFromStorage = localStorage.getItem('userInfo') 

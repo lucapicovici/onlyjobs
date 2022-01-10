@@ -10,12 +10,14 @@
       {
         "id": "5c8a1d5b0190b214360dc034",
         "name": "Samsung",
-        "cv": "willis-samsung.pdf"
+        "cv": "willis-samsung.pdf",
+        "offer": "Embedded Software Engineer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc036",
         "name": "AMD",
-        "cv": "willis-amd.pdf"
+        "cv": "willis-amd.pdf",
+        "offer": "Software Engineer intern"
       }
     ],
     "images": [
@@ -33,7 +35,8 @@
       {
         "id": "5c8a1d5b0190b214360dc038",
         "name": "AECOM",
-        "cv": "filea-aecom.pdf"
+        "cv": "filea-aecom.pdf",
+        "offer": "Construction Analyst intern"
       }
     ],
     "images": [
@@ -51,17 +54,20 @@
       {
         "id": "5c8a1d5b0190b214360dc034",
         "name": "Samsung",
-        "cv": "john-samsung.pdf"
+        "cv": "john-samsung.pdf",
+        "offer": "Embedded Software Engineer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc036",
         "name": "AMD",
-        "cv": "john-amd.pdf"
+        "cv": "john-amd.pdf",
+        "offer": "Machine Learning intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc035",
         "name": "Abac",
-        "cv": "john-abac.pdf"
+        "cv": "john-abac.pdf",
+        "offer": "Front End Web Developer intern"
       }
     ],
     "images": [
@@ -79,17 +85,20 @@
       {
         "id": "5c8a1d5b0190b214360dc034",
         "name": "Samsung",
-        "cv": "kevin-samsung.pdf"
+        "cv": "kevin-samsung.pdf",
+        "offer": "Embedded Software Engineer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc036",
         "name": "AMD",
-        "cv": "kevin-amd.pdf"
+        "cv": "kevin-amd.pdf",
+        "offer": "Backend Software Developer intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc035",
         "name": "Abac",
-        "cv": "kevin-abac.pdf"
+        "cv": "kevin-abac.pdf",
+        "offer": "Java Developer intern"
       }
     ],
     "images": [
@@ -107,12 +116,14 @@
       {
         "id": "5c8a1d5b0190b214360dc039",
         "name": "L'Oreal",
-        "cv": "mary-loreal.pdf"
+        "cv": "mary-loreal.pdf",
+        "offer": "PR intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc040",
         "name": "ING Bank",
-        "cv": "mary-ingbank.pdf"
+        "cv": "mary-ingbank.pdf",
+        "offer": "Social Media Analyst intern"
       }
     ],
     "images": [
@@ -130,7 +141,8 @@
       {
         "id": "5c8a1d5b0190b214360dc037",
         "name": "Regina Maria",
-        "cv": "charly-reginamaria.pdf"
+        "cv": "charly-reginamaria.pdf",
+        "offer": "Medical Assistant intern"
       }
     ],
     "images": [
@@ -148,12 +160,14 @@
       {
         "id": "5c8a1d5b0190b214360dc039",
         "name": "L'Oreal",
-        "cv": "greg-loreal.pdf"
+        "cv": "greg-loreal.pdf",
+        "offer": "PR intern"
       },
       {
         "id": "5c8a1d5b0190b214360dc040",
         "name": "ING Bank",
-        "cv": "greg-ingbank.pdf"
+        "cv": "greg-ingbank.pdf",
+        "offer": "Social Media Analyst intern"
       }
     ],
     "images": [
