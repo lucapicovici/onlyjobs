@@ -5,7 +5,10 @@ import {
   BUSINESS_DETAILS_REQUEST,
   BUSINESS_DETAILS_SUCCESS,
   BUSINESS_DETAILS_FAIL,
-  SEARCH_CRITERIA
+  SEARCH_CRITERIA,
+  BUSINESS_APPLY_REQUEST,
+  BUSINESS_APPLY_SUCCESS,
+  BUSINESS_APPLY_FAIL
 } from '../constants/businessConstants';
 
 export const businessListReducer = (state={ businesses: [] }, action) => {
@@ -51,6 +54,22 @@ export const searchCriteriaReducer = (state={ }, action) => {
         city: action.payload.city,
         domain: action.payload.domain
        };
+    default:
+      return state;
+  }
+};
+
+export const studentApplyForInternshipReducer = (state = {}, action) => {
+  switch(action.type) {
+    case BUSINESS_APPLY_REQUEST:
+      return { loading: true };
+    case BUSINESS_APPLY_SUCCESS:
+      return {
+        loading: false,
+        success: true
+      };
+    case BUSINESS_APPLY_FAIL:
+      return { loading: false, error: action.payload };
     default:
       return state;
   }

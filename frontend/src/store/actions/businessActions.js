@@ -4,7 +4,10 @@ import {
   BUSINESS_LIST_SUCCESS,
   BUSINESS_DETAILS_REQUEST,
   BUSINESS_DETAILS_SUCCESS,
-  BUSINESS_DETAILS_FAIL
+  BUSINESS_DETAILS_FAIL,
+  BUSINESS_APPLY_REQUEST,
+  BUSINESS_APPLY_SUCCESS,
+  BUSINESS_APPLY_FAIL
 } from '../constants/businessConstants';
 import axios from 'axios';
 
@@ -49,3 +52,31 @@ export const listBusinessDetails = (userId) => async (dispatch) => {
     });
   }
 };
+
+export const studentApplyForInternship = ({ studentId, businessUserId, name, cv, offer }) => async (dispatch) => {
+  try {
+    dispatch({ type: BUSINESS_APPLY_REQUEST });
+
+    const config = {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+
+    const { data } = await axios.post(
+      `/api/businesses/apply/${studentId}`,
+      { businessUserId, name, cv, offer },
+      config
+    );
+
+    dispatch({
+      type: BUSINESS_APPLY_SUCCESS,
+      payload: data
+    });
+  } catch (error) {
+    dispatch({
+      type: BUSINESS_APPLY_FAIL,
+      payload: error.response?.data.message ?? error.message
+    });
+  }
+}

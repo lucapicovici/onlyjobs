@@ -53,3 +53,28 @@ export const getBusinessByUserId = asyncHandler(async(req, res) => {
     throw new Error('Business not found');
   }
 });
+
+/**
+ * @desc    Student apply for internship - business side
+ * @route   POST /api/businesses/apply/:studentId
+ * @access  Public
+ */
+export const studentApplyForInternship = asyncHandler(async(req, res) => {
+  const { businessUserId, name, offer, cv } = req.body;
+
+  // Find business with given user ID
+  const business = await Business.findOne({ user: businessUserId });
+
+  // Push to applications array
+  const newApplicant = {
+    id: req.params.studentId,
+    name,
+    offer,
+    cv
+  };
+
+  business.applicants.push(newApplicant);
+  business.save();
+
+  res.status(201).json(business);
+});
