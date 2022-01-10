@@ -3,7 +3,6 @@ import {Avatar} from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import {blue} from "@mui/material/colors";
 import {Button, Card, Col, Container, Form, FormGroup, Row, Table} from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
 import { listStudentDetails } from '../store/actions/studentActions';
 import Loader from '../components/Loader';
 import Message from '../components/Message';

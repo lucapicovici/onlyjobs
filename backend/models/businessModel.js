@@ -17,6 +17,10 @@ const businessSchema = mongoose.Schema({
     type: Boolean,
     default: true
   },
+  internships: { 
+    type: String,
+    required: true
+  },
   applicants: [
     {
       id: {
@@ -24,6 +28,7 @@ const businessSchema = mongoose.Schema({
         ref: 'User'  // Student
       },
       name: { type: String },
+      offer: { type: String },
       cv: { type: String }  // @TODO: file upload
     }
   ],

@@ -6,20 +6,24 @@
     "city": "Bucuresti",
     "domain": "computer-science",
     "available": true,
+    "internships": "Embedded Software Engineer intern",
     "applicants": [
       {
         "id": "5d7a514b5d2c12c7449be043",
         "name": "George Willis",
+        "offer": "Embedded Software Engineer intern",
         "cv": "george-willis.pdf"
       },
       {
         "id": "5d7a514b5d2c12c7449be045",
         "name": "John Doe",
+        "offer": "Embedded Software Engineer intern",
         "cv": "john-samsung.pdf"
       },
       {
         "id": "5d7a514b5d2c12c7449be046",
         "name": "Kevin Smith",
+        "offer": "Embedded Software Engineer intern",
         "cv": "kevin-samsung.pdf"
       }
     ],
@@ -34,15 +38,18 @@
     "city": "Cluj-Napoca",
     "domain": "computer-science",
     "available": true,
+    "internships": "Java Developer intern",
     "applicants": [
       {
         "id": "5d7a514b5d2c12c7449be045",
         "name": "John Doe",
+        "offer": "Java Developer intern",
         "cv": "john-abac.pdf"
       },
       {
         "id": "5d7a514b5d2c12c7449be046",
         "name": "Kevin Smith",
+        "offer": "Java Developer intern",
         "cv": "kevin-abac.pdf"
       }
     ],
@@ -57,20 +64,24 @@
     "city": "Bucuresti",
     "domain": "computer-science",
     "available": true,
+    "internships": "Software Engineer intern",
     "applicants": [
       {
         "id": "5d7a514b5d2c12c7449be043",
         "name": "George Willis",
+        "offer": "Software Engineer intern",
         "cv": "george-willis.pdf"
       },
       {
         "id": "5d7a514b5d2c12c7449be045",
         "name": "John Doe",
+        "offer": "Software Engineer intern",
         "cv": "john-amd.pdf"
       },
       {
         "id": "5d7a514b5d2c12c7449be046",
         "name": "Kevin Smith",
+        "offer": "Software Engineer intern",
         "cv": "kevin-amd.pdf"
       }
     ],
@@ -85,10 +96,12 @@
     "city": "Cluj-Napoca",
     "domain": "health",
     "available": true,
+    "internships": "Medical Assistant intern",
     "applicants": [
       {
         "id": "5c8a1d5b0190b214360dc032",
         "name": "Charly Antolini",
+        "offer": "Medical Assistant intern",
         "cv": "charly-reginamaria.pdf"
       }
     ],
@@ -103,10 +116,12 @@
     "city": "Timisoara",
     "domain": "construction-engineering",
     "available": true,
+    "internships": "Construction Analyst intern",
     "applicants": [
       {
         "id": "5d7a514b5d2c12c7449be044",
         "name": "Eugen Filea",
+        "offer": "Construction Analyst intern",
         "cv": "filea-aecom.pdf"
       }
     ],
@@ -121,15 +136,18 @@
     "city": "Cluj-Napoca",
     "domain": "marketing",
     "available": true,
+    "internships": "PR intern",
     "applicants": [
       {
         "id": "5c8a1d5b0190b214360dc031",
         "name": "Mary Williams",
+        "offer": "PR intern",
         "cv": "mary-loreal.pdf"
       },
       {
         "id": "5c8a1d5b0190b214360dc033",
         "name": "Greg Harris",
+        "offer": "PR intern",
         "cv": "greg-loreal.pdf"
       }
     ],
@@ -144,15 +162,18 @@
     "city": "Cluj-Napoca",
     "domain": "marketing",
     "available": true,
+    "internships": "Social Media Analyst intern",
     "applicants": [
       {
         "id": "5c8a1d5b0190b214360dc031",
         "name": "Mary Williams",
+        "offer": "Social Media Analyst intern",
         "cv": "mary-ingbank.pdf"
       },
       {
         "id": "5c8a1d5b0190b214360dc033",
         "name": "Greg Harris",
+        "offer": "Social Media Analyst intern",
         "cv": "greg-ingbank.pdf"
       }
     ],
